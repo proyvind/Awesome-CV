@@ -19,6 +19,7 @@ cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 endif
 $(coverletter).pdf: $(INDIR)/$(coverletter).tex
 	$(TEX) -output-directory=$(OUTDIR) $<
+	$(TEX) -output-directory=$(OUTDIR) $<
 
 clean:
 	rm -f *~ *.synctex.gz *.aux *.log *.out *.backup *.toc *.temp *.pdf
